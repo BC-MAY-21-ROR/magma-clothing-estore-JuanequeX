@@ -34,7 +34,7 @@ The new system must support the following requirements:
 
 ## Estimation
 
-- [See project estimation]()
+- [See project estimation](https://docs.google.com/spreadsheets/d/1hz52fLeTOcV8PH5fta5cPNs4f0Jq-fn6Y6ci08AC8NI/edit#gid=122977981)
 
 ## Recommended pactices:
 
