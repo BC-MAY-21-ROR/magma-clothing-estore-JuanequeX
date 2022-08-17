@@ -1,25 +1,25 @@
-Quick Info
+### Quick Info
 ---
 
 Migrations? :-1:
 
-What does this change?
+### What does this change?
 ----
 
-Why are you changing that?
+### Why are you changing that?
 ----
 
-How did you accomplish this change?
+### How did you accomplish this change?
 ----
 
-Merge/Deploy Checklist
+### Merge/Deploy Checklist
 ----
 - [ ] It has been reviewed and accepted.
 
-How do you manually test this?
+### How do you manually test this?
 ----
 
-Screenshots
+### Screenshots
 ----
 
 ### Desktop
