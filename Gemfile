@@ -51,11 +51,17 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "rspec-rails"
+  gem "apparition", "~> 0.6.0", github: "twalpole/apparition"
+  gem "rails-controller-testing", "~> 1.0.5"
+  gem "rspec-activemodel-mocks", "~> 1.1.0"
+  gem "solidus_dev_support", "~> 2.5"
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem "rubycritic", require: false
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -69,3 +75,14 @@ group :test do
   gem "capybara"
   gem "cuprite"
 end
+
+gem "solidus_auth_devise"
+
+gem "solidus_core", "~> 3.2"
+gem "solidus_backend", "~> 3.2"
+gem "solidus_api", "~> 3.2"
+gem "solidus_sample", "~> 3.2"
+gem "canonical-rails"
+gem "solidus_support"
+gem "truncate_html"
+gem "view_component", "~> 2.46"
