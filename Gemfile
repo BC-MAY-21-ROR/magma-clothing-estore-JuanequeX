@@ -81,6 +81,7 @@ gem "canonical-rails"
 gem "solidus_support"
 gem "truncate_html"
 gem "view_component", "~> 2.46"
+gem 'solidus_oxxo_pay', github: 'magma-labs/solidus_oxxo_pay'
 
 group :development, :test do
   gem "rspec-rails"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_30_193785) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_30_200612) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -174,6 +174,16 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_30_193785) do
     t.index ["imported_from_shipment_id"], name: "index_spree_cartons_on_imported_from_shipment_id", unique: true
     t.index ["number"], name: "index_spree_cartons_on_number", unique: true
     t.index ["stock_location_id"], name: "index_spree_cartons_on_stock_location_id"
+  end
+
+  create_table "spree_conekta_oxxo_payments", id: :serial, force: :cascade do |t|
+    t.integer "payment_method_id"
+    t.string "number"
+    t.string "conekta_order_id"
+    t.string "first_name"
+    t.string "last_name"
+    t.integer "user_id"
+    t.index ["payment_method_id"], name: "index_spree_conekta_oxxo_payments_on_payment_method_id"
   end
 
   create_table "spree_countries", id: :serial, force: :cascade do |t|
